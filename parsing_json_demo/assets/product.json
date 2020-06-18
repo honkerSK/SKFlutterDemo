@@ -1,0 +1,14 @@
+{
+  "id":1,
+  "name":"盒装牛奶",
+  "images":[
+    {
+      "id":11,
+      "imageName":"telunsu.png"
+    },
+    {
+      "id":22,
+      "imageName":"wahaha.png"
+    }
+  ]
+}

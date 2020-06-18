@@ -1,0 +1,10 @@
+{
+  "nickname": "coderTao",
+  "age": 20,
+  "courses": ["政治", "高数", "英语"],
+  "register_date": "2018-2-22",
+  "computer": {
+    "brand": "MackBook",
+    "price": 9999
+  }
+}
