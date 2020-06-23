@@ -3,15 +3,15 @@ import 'package:event_bus/event_bus.dart';
 
 // 使用event_bus 多层组件事件传递
 
-// 1.创建全局的EventBus对象
-final eventBus = EventBus();
-
+// 1.定义一个希望在组件之间传递的对象
 class UserInfo{
   String nickname;
   int level;
 
   UserInfo(this.nickname, this.level);
 }
+// 2.创建全局的EventBus对象
+final eventBus = EventBus();
 
 void main() {
   runApp(MyApp());
@@ -58,7 +58,7 @@ class SKButton extends StatelessWidget {
     return RaisedButton(
       child: Text('按钮'),
       onPressed: (){
-        //2.发出事件
+        //2.在某个Widget中，发出事件
         final info = UserInfo('codeTao', 18);
         eventBus.fire(info);
       },
@@ -79,7 +79,7 @@ class _SKTextState extends State<SKText> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    //3.initState中监听事件的类型
+    //3.在某个Widget initState中监听事件
     eventBus.on<UserInfo>().listen((event) {
       print(event.nickname);
       print(event.level);
