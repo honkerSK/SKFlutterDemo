@@ -8,23 +8,31 @@
 ### 02-状态管理 
 + 文件夹: state_management
 + 内容:
-1>InheritedWidget 
-2>Provider.of: 
-3>Consumer 
-4>Selector
-5>MultiProvider 多个Provider
+1> InheritedWidget 
+2> Provider.of: 
+3> Consumer 
+4> Selector
+5> MultiProvider 多个Provider
 
 ### 03-事件监听
 + 文件夹: event_listener
 + 内容: 
-1>指针事件Pointer  
-2>手势识别Gesture   
-3>event_bus跨组件传递事件
+1> 指针事件Pointer  
+2> 手势识别Gesture   
+3> event_bus跨组件传递事件
 
 ### 04-路由管理
 + 文件夹: router_manager
 + 内容: 
-1>路由基本使用 
-2>命名路由使用
-3>路由钩子 
+1> 路由基本使用 
+2> 命名路由使用
+3> 路由钩子 
 
+### 05-动画和转场
++ 文件夹: animation
++ 内容:
+1> 动画基本使用
+2> AnimatedWidget使用
+3> AnimatedBuilder使用
+4> 交织动画
+5> model转场和享元动画
