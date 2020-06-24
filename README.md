@@ -50,3 +50,10 @@
 + 内容:
 1> rpx适配
 2> 封装工具类 screen_fit.dart
+
+### 08-基本框架搭建
++ 文件夹: douban
++ 内容:
+1> StarRating
+2> DashedLine
+3> 底部TabBar
