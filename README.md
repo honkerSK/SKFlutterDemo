@@ -79,9 +79,11 @@
 文件夹: sk_battery / sk_battery_objc_java
 内容: 
 + 1)创建的Flutter项目，对应iOS的编程语言是Swift，对应Android的编程语言是kotlin，可以指定编程语言创建项目
+
 ```
 flutter create -i objc -a java sk_battery_objc_java
 ```
+
 + 2)通过 platform.invokeMethod 调用对应平台方法时，在对应的平台实现其操作：
 sk_battery 通过Swift和Kotlin实现
 sk_battery_objc_java 通过Objective-C和Java实现
@@ -90,17 +92,23 @@ sk_battery_objc_java 通过Objective-C和Java实现
 ### 12-原生项目嵌入Flutter模块
 文件夹: embed_flutter_demo
 内容: 
-+ 1)创建Flutter Module, 默认iOS的编程语言是Swift，对应Android的编程语言是kotlin
++ 1) 创建Flutter Module
+
 ```
 flutter create --template module sk_flutter_module
 ```
 
-+ 2)创建Flutter Module, iOS的编程语言是Objective-C，对应Android的编程语言是java
++ 2) 子文件夹 sk_flutter_module :  flutter 模块
++ 3) 子文件夹 oc_embed_flutter : OC项目嵌入flutter 模块
++ 4) 子文件夹 swift_embed_flutter : swift项目嵌入flutter 模块
++ 5) 子文件夹 java_embed_flutter : java项目嵌入flutter 模块
++ 6) 子文件夹 kotlin_embed_flutter : kotlin项目嵌入flutter 模块
+
+
++ 7) Flutter模块调试
 ```
-flutter create -i objc -a java --template module sk_flutter_oc_java_module
+# --app-id是指定哪一个应用程序
+# -d是指定连接哪一个设备
+flutter attach --app-id com.coderTao.ios-my-test -d 3D7A877C-B0DD-4871-8D6E-0C5263B986CD
 ```
-+ 3) 文件夹 sk_flutter_module : 
-
-
-
 

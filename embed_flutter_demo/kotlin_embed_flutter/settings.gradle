@@ -1,0 +1,11 @@
+include ':app'
+rootProject.name = "kotlin_embed_flutter"
+
+setBinding(new Binding([gradle: this]))                                 // new
+evaluate(new File(                                                      // new
+        settingsDir.parentFile,                                               // new
+        'sk_flutter_module/.android/include_flutter.groovy'                          // new
+))
+
+include ':sk_flutter_module'
+project(':sk_flutter_module').projectDir = new File('../sk_flutter_module')

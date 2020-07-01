@@ -1,0 +1,6 @@
+framework module Pods_swift_embed_flutter {
+  umbrella header "Pods-swift_embed_flutter-umbrella.h"
+
+  export *
+  module * { export * }
+}
